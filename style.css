@@ -1,0 +1,264 @@
+.ad{
+    text-align: center;
+    background-color: #000;
+    padding: .3rem 0;
+}
+.ad h1{
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+}
+.ad h1 .s-case{
+    text-transform: lowercase;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.ad a{
+    display: inline-block;
+    margin-bottom: -.5rem;
+    transform: translateY(-25%);
+    margin-left: 1rem;
+    color: #29c10e;
+    font-size: 1.4rem;
+}
+aside {
+    width: calc(100% / 5 * 1);
+    float: left;
+}
+
+aside li {
+    padding: .5rem 0;
+}
+
+aside li a {
+    font-size: 1.4rem;
+}
+
+aside li a:hover {
+    color: #23cb0d;
+}
+
+@media only screen and (max-width: 500px) {
+    aside {
+        width: 100%;
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+footer{
+    background-color: #f0f0f0;
+    padding: 3rem 0;
+}
+.f_cont{
+    display: flex;
+    justify-content: space-between;
+}
+.col_1, .col_2, .col_3{
+    text-align: center;
+    
+}
+nav{
+    background-color: #f4ebeb;
+}
+nav ul{
+    display:flex;
+    justify-content: space-between;
+}
+ nav ul li a{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: .4rem;
+    background-color: #24c110;
+    transition: width .35s ease-in-out;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+@import "ad.css";
+@import "header.css";
+@import "aside.css";
+@import "section.css";
+@import "footer.css";
+@import "media.css";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #585858;
+    display: block;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: .8rem;
+}
+
+p {
+    font-size: 1.4rem;
+    color: #585858;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-area {
+    margin-bottom: 2rem;
+}
+
+.main-text {
+    text-align: center;
+    margin-top: 5rem;
+}
+.main-text p {
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.main_content {
+    margin: 4rem;
+}
+
+.clear_fix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (max-width: 1300px) {
+    .im_ds img {
+        height: 20rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .im_ds img {
+        height: 18rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .im_ds img {
+        height: 16rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .width-prefix {
+        width: 85%;
+        margin: auto;
+    }
+}
+@media (min-width: 1200px) {
+    .width-prefix {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .im_ds img {
+        height: 14rem;
+    }
+}
+
+@media  (max-width: 800px) {
+    .im_ds img {
+        height: 14rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .im_ds img {
+        height: 20rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .im_ds img {
+        height: 17rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .im_ds img { height: 15rem;}
+}
+
+@media (max-width: 500px) {
+    section {
+        grid-template-columns: 1fr;
+        width: 100%; 
+        float: none;
+    } 
+    .im_ds img {
+        height: auto;
+    }
+    
+    footer{
+    padding: 1rem 0;
+}
+    
+    .f_cont{
+    display: block;
+}
+    .col_1,
+    .col_2,
+    .col_3 {
+        width: 100%;
+        display: block;
+        padding: 1rem 0;
+    }
+  
+}
+    
+    
+
+   /*
+    .main-text {
+        margin-top: calc(5rem -4);
+    }
+*/
+section{
+    float: left;
+    width: calc(100% / 5 * 4);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.2rem;
+    grid-row-gap: 1.8rem;
+}
+
+.im_ds img{
+    max-width: 100%;
+    height: 23rem;
+}
